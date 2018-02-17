@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]) 
 {
 
-    char shkala;
-    shkala= *argv[ 1];
+    char scale;
+    scale= *argv[ 1];
     float temp;
     temp= atof(argv[2]);
-    switch(shkala)
+    switch(scale)
     {
     case 'C':
 
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                printf("Ne sootvetstvyet zakonam fiziki");
+                printf("Does not correspond to the laws of physics");
             }
             break;
 
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
             }
             else
             {
-                printf("Ne sootvetstvyet zakonam fiziki");
+                printf("Does not correspond to the laws of physics");
 
             }
             break;
@@ -45,23 +45,23 @@ int main(int argc, char *argv[])
             }
             else
             {
-                printf("Ne sootvetstvyet zakonam fiziki");
+                printf("Does not correspond to the laws of physics");
             }
         break;
 
         default:
         {
-            printf("Esli vveden C,to:\n");
-            printf("С=%.2f\n",temp);
+            printf("If entered C,then:\n");
+            printf("C=%.2f\n",temp);
             printf("K=%.2f\n",temp+273.15);
             printf("F=%.2f\n\n\n\n",temp*1.8+32);
 
-            printf("Esli vveden K, то:\n");
+            printf("If entered K, then:\n");
             printf("K=%.2f\n",temp);
             printf("C=%.2f\n",temp-273.15);
             printf("F=%.2f\n\n\n\n",(temp-273.15)*1.8+32);
 
-            printf("Esli vveden F, то:\n");
+            printf("If entered F, then:\n");
             printf("F=%.2f\n",temp);
             printf("C=%.2f\n",(temp-32)/1.8);
             printf("K=%.2f\n",(temp-32)/1.8+273.15);
