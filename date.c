@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <locale.h>
 int month(int a)
 {
 
@@ -41,19 +40,19 @@ int month(int a)
         return 6;
         break;
         default:
-        printf("Takogo month ne bivaet");
+        printf("This month does not exist");
         exit(0);
         }
 }
 
-int god(int a)
+int year(int a)
 {
-    int first,last,vek;
+    int first,last,сentury;
 
     first=a/100;
     last=a%100;
-    vek=6-(first%4)*2;
-    return ((vek+last+last/4)%7);
+    сentury=6-(first%4)*2;
+    return ((сentury+last+last/4)%7);
 }
 
 
@@ -62,7 +61,6 @@ int god(int a)
 int main()
 {
     int g,d,a;
-    setlocale(LC_ALL, "RUS");
     printf("vvedite god\n");
     scanf("%d",&g);
     printf("vvedite nomer month\n");
@@ -74,10 +72,10 @@ int main()
     switch (otvet)
     {
   case 0:
-    printf("Subbota");
+    printf("Saturday");
     break;
   case 1:
-    printf("Voskresenie");
+    printf("Sunday");
     break;
   case 2:
     printf("Ponedelnik");
