@@ -61,15 +61,15 @@ int year(int a)
 int main()
 {
     int g,d,a;
-    printf("vvedite god\n");
+    printf("enter the year\n");
     scanf("%d",&g);
-    printf("vvedite nomer month\n");
+    printf("enter the month\n");
     scanf("%d",&a);
-    printf("vvedite day\n");
+    printf("enter the day\n");
     scanf("%d",&d);
-    int otvet;
-    otvet=((d+month(a)+god(g))%7);
-    switch (otvet)
+    int answer;
+    answer=((d+month(a)+year(g))%7);
+    switch (answer)
     {
   case 0:
     printf("Saturday");
@@ -78,22 +78,22 @@ int main()
     printf("Sunday");
     break;
   case 2:
-    printf("Ponedelnik");
+    printf("Monday");
     break;
   case 3:
-    printf("Vtornik");
+    printf("Tuesday");
     break;
   case 4:
-    printf("Sreda");
+    printf("Wednesday");
     break;
   case 5:
-    printf("Chetverg");
+    printf("Thursday");
     break;
     case 6:
-        printf("Pyatnitsa");
+        printf("Friday");
         break;
     default:
-        printf("bagulia");
+        printf("bug");
         break;
 }
 return 0;
