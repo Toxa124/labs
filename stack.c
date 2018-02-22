@@ -7,7 +7,7 @@ int a;
 int razmer=1000;
 void do1()
 {
-    printf("Vvedite jelaemoe znachenie\n");
+    printf("Enter the desired value\n");
     int z;
     scanf("%d",&z);
 stack[teknomer]=z;
@@ -17,7 +17,7 @@ void do2()
 {
 if (teknomer == 0)
 {
-printf("stack pyst");
+printf("stack empty");
 }
 else
 {
@@ -29,7 +29,7 @@ void do3()
 {
  if (teknomer==0)
  {
-     printf("stack pyst");
+     printf("stack empty");
  }
  else
  {
@@ -51,7 +51,7 @@ int main()
 
     while (a!=5)
     {
-        printf(" \n1)Polojit element B stack\n 2)ybrat element iz stack\n 3)Pokazat verxnii element\n 4)Pokazat stack\n 5)Zakonchit raboty\n");
+        printf(" \n1)put the item on the stack\n 2)remove an item from the stack\n 3)show top item\n 4)show stack\n 5)finish the job\n");
     scanf("%d",&a);
 
 
@@ -74,7 +74,7 @@ int main()
                 break;
 
              default:
-                printf("oshibka pri vibore");
+                printf("error in selection");
                }
     }
 
