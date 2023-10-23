@@ -10,7 +10,6 @@ int main(int argc, char *argv[])
     switch(scale)
     {
     case 'C':
-        //очень важное добавление
 
             if (temp>=-273.15)
             {
